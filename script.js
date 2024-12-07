@@ -75,7 +75,10 @@ const winChecker = () => {
     ];
     if (element1 != "" && element2 != "" && element3 != "") {
       if (element1 == element2 && element2 == element3) {
-        winFunction(element1);
+        setTimeout(() => {
+          disableButtons();
+          winFunction(element1);
+        }, 500);
       }
     }
   }
