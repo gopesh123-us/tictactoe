@@ -63,7 +63,7 @@ restartBtn.addEventListener("click", () => {
 //this function is executed when game is a draw
 const drawFunction = () => {
   disableButtons();
-  messageRef.innerHTML = "&#x1F60E; <br> It's is a Draw";
+  messageRef.innerHTML = "&#x1F60E; <br> It is a Draw";
 };
 
 const winChecker = () => {
