@@ -78,7 +78,7 @@ const winChecker = () => {
         setTimeout(() => {
           disableButtons();
           winFunction(element1);
-        }, 500);
+        }, 200);
       }
     }
   }
@@ -102,9 +102,11 @@ buttonsRef.forEach((element) => {
     //increment count on each click
     count = count + 1;
     if (count == 9) {
+      disableButtons();
       drawFunction();
+    } else {
+      winChecker();
     }
-    winChecker();
   });
 });
 // inner text = x
